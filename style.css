@@ -1,0 +1,1118 @@
+/* Import Barlow font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap");
+
+/*
+________________________________________________
+_________________Header Css__________________
+________________________________________________
+
+*/
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the header */
+.header-background1 {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust as needed */
+  overflow: hidden;
+}
+
+/* Style the video */
+.header-background1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("http://localhost/mywordpress/wp-content/uploads/2024/09/snowmobile-adventure-2022-10-28-03-56-24-utc_842-1.mp4")
+    no-repeat center center/cover;
+  z-index: -1;
+}
+
+/* Ensure the video covers the entire header */
+.header-background1 video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+
+/* Style the header container */
+.header-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+}
+
+/* Style the top navigation */
+.top-navigation {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.top-navigation ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.top-navigation li {
+  margin-right: 20px;
+}
+
+.top-navigation a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style the main navigation */
+.main-navigation {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.main-navigation ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.main-navigation li {
+  margin: 0 15px;
+}
+
+.main-navigation a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Hover effect for navigation links */
+.top-navigation a:hover,
+.main-navigation a:hover {
+  color: rgb(96, 136, 223);
+}
+
+/*
+________________________________________________
+_____________________universal__________________ define the global Div class, use div ids for local
+________________________________________________
+*/
+
+.centerMe {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --primary-dark: #114084;
+  --primary: #3466aa;
+  --primary-light: #82b7dc;
+  --background: #f1f1f1;
+  --gray: #808080;
+  --dark: #1c1c1c;
+
+  --heading-font-size: 30px;
+  --paragraph-font-size: 16px;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  background-color: var(--background);
+  color: var(--dark);
+  line-height: 1.6;
+  margin-bottom: 2px;
+  padding: 0;
+}
+
+/*global header*/
+.headerA {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 2px;
+  color: var(--primary-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 2px;
+  color: var(--primary-dark);
+}
+
+h1 {
+  font-size: var(--heading-font-size);
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  line-height: 1.5;
+  font-size: var(--paragraph-font-size);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-light);
+}
+
+.btn {
+  font-family: "Barlow", sans-serif;
+  background-color: var(--primary);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: var(--paragraph-font-size);
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.text-muted {
+  color: var(--gray);
+}
+
+.bg-dark {
+  background-color: var(--dark);
+  color: white;
+}
+
+/*
+________________________________________________
+_____________________homepage__________________ place this locally on the home.php
+________________________________________________
+*/
+
+/*
+________________________________________________
+_________________Pages__________________
+________________________________________________
+*/
+
+/*
+________________________________________________
+_________________About Us__________________
+________________________________________________
+*/
+
+/*
+________________________________________________
+_________________CTA Page__________________
+________________________________________________
+*/
+
+/*
+________________________________________________
+_________________Content Post__________________
+________________________________________________
+*/
+
+/*
+________________________________________________
+_________________Footer__________________
+________________________________________________
+*/
+
+/* Footer Styles */
+.site-footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 2rem 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+.footer-navigation ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-navigation li {
+  margin-right: 1.5rem;
+}
+
+.footer-navigation a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-navigation a:hover {
+  color: #ddd;
+}
+
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #ddd;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-logo,
+  .footer-navigation,
+  .footer-contact {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-navigation ul {
+    justify-content: center;
+  }
+
+  .footer-navigation li {
+    margin: 0.5rem;
+  }
+}
+
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/*----------------------Local Home CSS-----------------------------*/
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+
+/** headlines  */
+#home1 {
+  font-size: 40px;
+  margin-bottom: 4%;
+}
+
+#home2 {
+  font-size: 40px;
+  margin-bottom: 4%;
+}
+
+#home3 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+
+  padding-bottom: 30px;
+  color: white;
+}
+
+/** paragraph text */
+
+.pText1 {
+  color: white;
+}
+
+.pText1 {
+}
+
+.container {
+  padding: 40px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+}
+
+.text-muted {
+  font-style: italic;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.containerA {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/**
+______________________________________________________________________________________
+______________________________________________________________________________________
+___________________________________________product section ___________________________
+______________________________________________________________________________________
+______________________________________________________________________________________
+*/
+
+
+
+
+
+/** Product Image Grid */
+    /* Base styles (unchanged) */
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+  }
+
+  .grid-item {
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+  }
+
+  .grid-item:hover {
+      transform: scale(1.02);
+      transition: transform 0.3s ease;
+  }
+
+  .grid-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+      margin-bottom: 0;
+  }
+
+  .grid-item:hover img {
+      transform: scale(1.1);
+      margin-bottom: 15px;
+  }
+
+  .button-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #f0f0f0;
+  }
+
+  /*
+  .button-container:hover {}
+  */
+
+  .button-container-title {
+      
+      padding-top: 10px;
+      
+      background-color: #f0f0f0;
+  }
+
+  /** Grid Image Text and button section  */
+
+  .grid-button-title {
+      font-weight: bold;
+  }
+
+  .grid-button-text {
+      font-size: 35px;
+      font-weight: bold;
+  }
+
+  /**grid-button: Get Financing*/
+
+  .grid-button-financing {
+      flex: 1;
+      padding: 8px 12px;
+      margin: 0 5px;
+      background-color: #e14e4e;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+  .grid-button-financing:hover {
+      background-color: #0056b3;
+
+  }
+
+  .grid-button-financing:first-child {
+      margin-left: 0;
+  }
+
+  .grid-button-financing:last-child {
+      margin-right: 0;
+  }
+
+
+
+
+
+
+
+
+  /**grid-button: Call Us */
+
+  .grid-button-call {
+      flex: 1;
+      padding: 8px 12px;
+      margin: 0 5px;
+      background-color: #31b44b;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+  .grid-button-call:hover {
+      background-color: #0056b3;
+
+  }
+
+  .grid-button-call:first-child {
+      margin-left: 0;
+  }
+
+  .grid-button-call:last-child {
+      margin-right: 0;
+  }
+
+
+
+
+
+
+
+  /**grid-button: Email */
+
+
+  .grid-button-email {
+      flex: 1;
+      padding: 8px 12px;
+      margin: 0 5px;
+      background-color: #003463;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+  .grid-button-email:hover {
+      background-color: #d72727;
+
+  }
+
+  .grid-button-email:first-child {
+      margin-left: 0;
+  }
+
+  .grid-button-email:last-child {
+      margin-right: 0;
+  }
+
+  /** end of grid buttons  */
+
+
+
+
+
+  .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+  }
+
+  .popup-content {
+      position: relative;
+      max-width: 80%;
+      max-height: 80%;
+  }
+
+  .popup-content img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+  }
+
+  .popup-text-top {
+      /* top over Lay of pop up */
+      position: absolute;
+      top: 2%;
+      left: 0;
+      /*right: 0;*/
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+  }
+
+  .popup-text-bottom {
+      /* bottom over Lay of pop up */
+      position: absolute;
+      bottom: 0;
+      /*left: 0;*/
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+  }
+
+  .close {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: white;
+      font-size: 30ev;
+      cursor: pointer;
+  }
+
+  /* Mobile-friendly adjustments */
+  @media screen and (max-width: 768px) {
+      .image-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 15px;
+          padding: 15px;
+      }
+
+      .grid-button {
+          padding: 6px 10px;
+          font-size: 14px;
+      }
+
+      .popup-text-top {
+          font-size: 30px;
+      }
+
+      .popup-text-bottom {
+          font-size: 30px;
+      }
+
+
+
+  }
+
+  @media screen and (max-width: 600px) {
+      .image-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+          padding: 20px;
+      }
+
+      .button-container {
+          flex-direction: column;
+          align-items: stretch;
+      }
+
+      .grid-button {
+          margin: 5px 0;
+          padding: 10px;
+      }
+
+      .grid-button-financing {
+        margin-top: 10px;
+      }
+      .grid-button-call {
+        margin-top: 10px;
+      }
+      .grid-button-email {
+        margin-top: 10px;
+      }
+
+      .grid-button:first-child {
+          margin-top: 0;
+      }
+
+      .grid-button:last-child {
+          margin-bottom: 0;
+      }
+
+      .popup-text-top {
+          font-size: 20px;
+      }
+
+      .popup-text-bottom {
+          font-size: 20px;
+      }
+
+  }
+
+
+
+
+
+
+
+
+/** 
+____________________________________________________________________________________
+____________________________________________________________________________________
+__________________________________________Why Shop with us? 
+____________________________________________________________________________________
+____________________________________________________________________________________
+
+*/
+
+
+/** 
+  uses home3 white headline and pText1 for white text 
+  
+  uses container: containerShop which will hold the blurry mountain background imagge
+  
+  */
+@media screen and (max-width: 1100px) {
+  .containerHomeProcess {
+    padding: 5% 10%;
+  }
+
+  .column-container3 {
+    flex-direction: column;
+  }
+
+  .column3 {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  #home3h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .containerHomeProcess {
+    padding: 5%;
+  }
+
+  #home3h2 {
+    font-size: 16px;
+  }
+}
+
+.containerShop {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 5% 20%;
+  background-image: url("http://localhost/mywordpress/wp-content/uploads/2024/09/sledoutlet-bg-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/**all columns */
+.colText {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* two column*/
+.container2col {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#homeShop {
+  padding: 30px;
+  border-radius: 8px;
+}
+
+#home1 {
+  text-align: center;
+}
+
+.two-column-text {
+  column-count: 2;
+  column-gap: 40px;
+  margin-bottom: 30px;
+}
+
+.two-column-text p {
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+  break-inside: avoid-column;
+}
+
+/*3 column: The Process*/
+.containerHomeProcess {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 5% 20%;
+  background-image: url("http://localhost/mywordpress/wp-content/uploads/2024/09/sledoutlet-bg-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#homeProcess {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#home3h2 {
+  font-size: 20px;
+  padding-bottom: 30px;
+  color: white;
+  text-align: center;
+}
+
+.column-container3 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.column3 {
+  flex-basis: 30%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Finance  */
+/* uses home2 headline  */
+
+/* Testimony  */
+
+/** uses home3 headline */
+
+/*
+#homeTestimony {
+}
+*/
+
+.pText3 {
+  text-align: center;
+  color: white;
+}
+
+.containerTestimony {
+  background-color: #82b7dc;
+  padding: 5% 7%;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 900px) {
+  .column-container {
+    flex-direction: column;
+  }
+
+  .column {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* CTA */
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/**adjust by screen size */
+@media (max-width: 900px) {
+  .two-column-text {
+    column-count: 1;
+  }
+}
+
+/* 
+-------------------------Image Carousel
+*/
+
+.wrap1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.carousel-container-testimony {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 80%; /* Full height of the viewport or the container */
+  position: relative;
+  width: 100%;
+  max-width: 80%;
+  height: 30%x;
+  overflow: hidden;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.carouselTestimony {
+  display: flex;
+  transition: transform 0.2s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 50%;
+  height: 400px;
+  margin: 0 10px;
+  background-color: #ddd;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item.center {
+  flex: 0 0 10;
+  height: 700px; /* Increase the height */
+  width: 400px;
+  margin-top: 10px; /* Shift the image vertically */
+}
+
+.carousel-item:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.2s ease;
+}
+
+.carousel-item:hover img {
+  transform: scale(1.1);
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 30%;
+  width: 5%;
+  height: 15%;
+  font-size: 5ev;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.carousel-arrow:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 60, 255, 0.8);
+}
+
+.carousel-arrow.left {
+  left: 10px;
+}
+
+.carousel-arrow.right {
+  right: 10px;
+}
+
+.carousel-arrow.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 900px) {
+  .carousel-container-testimony {
+    height: 20%;
+    width: 90%;
+  }
+  .carousel-item {
+    flex: 0 0 10;
+    height: 225px;
+    margin: 0 5px;
+  }
+  .carousel-item.center {
+    flex: 0 0 200px;
+    height: 300px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .carousel-container-testimony {
+    height: 20%px;
+  }
+  .carousel-item {
+    flex: 0 0 10;
+    height: 150px;
+    margin: 0 3px;
+  }
+  .carousel-item.center {
+    flex: 0 0 140px;
+    height: 200px;
+  }
+  
+}
+
+/*__________________________________________________________________________________
+___________________________________________________________________________________
+__________________pop up Carousel 
+___________________________________________________________________________________
+*/
+/* Updated styles for the popup */
+
+.popup-overlay-testimony {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content-testimony {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content-testimony img {
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.close-popup-testimony {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+  font-size: 60px;
+  cursor: pointer;
+  z-index: 1001;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.close-popup-testimony:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
